@@ -1,0 +1,18 @@
+:root{
+    --ColorPrimario: #2E90C4;
+    --ColorSecundario: #033265;
+    --ColorTerceario:#547496;
+    --ColorNegro:#000000;
+    --ColorBlanco: #ffffff;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container-info{
+background-color: #547496;
+}

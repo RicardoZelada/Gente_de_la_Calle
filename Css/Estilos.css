@@ -4,8 +4,12 @@
     --ColorTerceario:#547496;
     --ColorNegro:#000000;
     --ColorBlanco: #ffffff;
+    --ColorBody:#FCFCFC;
 }
 
+body{
+    background-color: var(--ColorBody);
+}
 
 *{
 margin: 0;
@@ -16,3 +20,10 @@ box-sizing: border-box;
 .container-info{
 background-color: #547496;
 }
+
+.accordion-body img,
+.img-colabora{
+    width: 150px;
+    height: auto;
+}
+

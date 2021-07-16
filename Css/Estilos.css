@@ -27,3 +27,160 @@ background-color: #547496;
     height: auto;
 }
 
+.nav-link-paginas-internas{
+    margin-top: 110px;
+}
+.nav-titulos-paginas-principales{
+  margin-top: 160px;
+}
+
+/* --- Estilo Header ---*/
+
+header{
+    position: fixed;
+    background-color: var(--ColorBlanco);
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 40px;
+    z-index: 200;
+}
+
+header nav{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: green;*/
+}
+
+header .toggle{
+    /*background-color: indianred;*/
+    width: 5%;
+    display: none;
+}
+
+header div img{
+    width: 30px;
+    height: auto;
+}
+
+header nav img{
+    width: 190px;s
+    height: auto;
+    margin-left: 70px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li{
+    position: relative;
+    padding: 5px;
+    top: 5px;
+}
+
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    color: var(--colorTerciario);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 100px;
+    /*display: block;*/
+}
+
+.estado-activo{
+    font-weight: bold;
+}
+
+.container-rrss{
+    background-color: var(--ColorPrimario);
+    position: fixed;
+    top: 100px;
+    z-index: 200;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: space-between;
+    color: var(--ColorBlanco);
+}
+
+.redes-sociales img{
+    width: 24px;
+    height: auto;
+}
+
+@media (max-width: 840px){
+    header nav img{
+        width: 120px;
+        margin-left: 2%;
+    }
+    header .toggle{
+        display: block;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav ul.active{
+        display: block;
+    }
+    header ul{
+    position: fixed;
+    background: var(--ColorBlanco);
+    width: 100%;
+    height: 40vh;
+    right: 0;
+    /*height: calc(70% - 90px);*/
+    top: 80px;
+    text-align: center;
+    }
+    header nav ul li a{
+        color: var(--colorBase_2);
+    }
+}
+
+@media (max-width:760px){
+    .container-rrss{
+        top: 72px;
+    }
+}
+
+@media (max-width: 450px){
+    .redes-sociales p{
+        display: none;
+    }
+    .redes-sociales{
+        justify-content: center;
+    }
+    .redes-sociales div{
+        display:flex;
+        width: 50%;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    img:nth-child(4){
+        width: 26px;
+        height: auto;
+    }
+}
+/*--- Fin Estilos Header ---*/
+
+/*--- Estilos Cards de Pago ---*/
+
+.card-header-pago{
+    background-color: var(--ColorSecundario);
+}
+

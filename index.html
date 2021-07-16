@@ -18,7 +18,8 @@
       <!-- Seccion del Header-->
     <header>
         <nav> 
-            <img src="Img/Logo.png" alt="Logo">
+            <a href="index.html">
+            <img src="Img/Logo.png" alt="Logo"></a>
                 <ul>
                     <li><a class="estado-activo" href="index.html">Inicio</a></li>
                     <li><a href="Colabora.html">Colabora</a></li>
@@ -47,22 +48,28 @@
     
 
     <!-- Seccion Slider ----->
-    <section class="container__splide mb-5">
-        <div class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img class="img-fluid" src="Img/Slide_1.png" alt=""></li>
-                    <li class="splide__slide"><img class="img-fluid" src="Img/Coronas_1.jpg" alt=""></li>
-                </ul>
+    <section class="container-fluid">
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="splide mb-5">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img class="img-fluid" src="Img/Slide_1.png" alt=""></li>
+                                <li class="splide__slide"><img class="img-fluid" src="Img/Coronas_1.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Seccion que Hacemos Info------>
-    <nav class="p-4 mt-4 text-center">
-        <h1> Que hacemos en nuestra fundacion</h1>
-    </nav>
-    <section class="container-lg container-info justify-content-center p-5 mt-5 mb-5">
+    <section class="container-lg container-info justify-content-center mt-5 p-5">
+        <nav class="p-5 text-center">
+            <h1> Que hacemos en nuestra fundacion</h1>
+        </nav>
         <div class="row">
             <div class="col-12">    
                 <p class="text-white">
@@ -80,7 +87,7 @@
     <nav class="p-4 mt-4 text-center">
         <h1>Tipos de Donaciones</h1>
     </nav>
-    <section class="container-lg bg-light p-5">
+    <section class="container-lg bg-light">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                 <img class="img-fluid" src="Img/Foto_1.png" alt="">
@@ -103,7 +110,7 @@
     </nav>
     <section class="container-md p-5">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
                         <img class="img-fluid" src="Img/Foto_1.png" alt="">
@@ -119,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
                         <img class="img-fluid" src="Img/Foto_1.png" alt="">
@@ -267,7 +274,7 @@
     </section>
 
     <!-- Footer-->
-    <footer class="container-fluid bg-dark">
+    <footer class="container-fluid bg-dark p-4">
         <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-12 col-sm-12">
@@ -276,20 +283,27 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="p-3">
+                    <div class="p-3 text-center">
                         <h5 class="text-white">Encuentranos</h5>
                         <p class="text-white">Humorista Carlos Helo 940, Comuna de Recoleta, Región Metropolitana, Chile. </p>
                         <p class="text-white">Telefono: +56 2 27774575 E-mail: info@gentedelacalle.cl</p>
+                        <div class="redes-sociales">
+                            <img  class="mx-3 my-2" src="Img/Redes Sociales/facebook_blanco.png" alt="facebook">
+                            <img class="mx-3 my-2" src="Img/Redes Sociales/linkedin_blanco.png" alt="linkedin">
+                            <img class="mx-3 my-2" src="Img/Redes Sociales/instagram_blanco.png" alt="instagram">
+                            <img class="mx-3 mt-2" src="Img/Redes Sociales/youtube_blanco.png" alt="youtube">
+                            <img class="mx-3 my-2" src="Img/Redes Sociales/twitter_blanco.png" alt="twitter">
+                        </div> 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="p-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="p-3 justify-content-center">
                         <h5 class="text-white">Contactanos</h5>
                         <form action="">
                             <input class="bg-dark p-2 mb-2" type="text" placeholder="Nombre" name="input-nombre">
                             <input class="bg-dark p-2 mb-2" type="email" placeholder="Email" name="input-email">
-                            <textarea class="bg-dark p-2 mb-2" name="textarea-mensaje" id="" cols="20" rows="3" placeholder="Mensaje"></textarea>
-                            <button class="bg-dark p-2" name="btn_enviar">Enviar</button>
+                            <textarea class="bg-dark p-2 mb-2" name="textarea-mensaje" id="" rows="3" placeholder="Mensaje"></textarea>
+                            <button class="bg-dark p-2 " name="btn_enviar">Enviar</button>
                         </form>
                     </div>
                 </div>

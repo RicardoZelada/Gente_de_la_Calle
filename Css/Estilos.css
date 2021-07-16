@@ -17,6 +17,10 @@ padding: 0;
 box-sizing: border-box;
 }
 
+.splide{
+    top: 180px;
+}
+
 .container-info{
 background-color: #547496;
 }
@@ -31,7 +35,7 @@ background-color: #547496;
     margin-top: 110px;
 }
 .nav-titulos-paginas-principales{
-  margin-top: 160px;
+  margin-top: 190px;
 }
 
 /* --- Estilo Header ---*/
@@ -69,7 +73,7 @@ header div img{
 }
 
 header nav img{
-    width: 190px;s
+    width: 190px;
     height: auto;
     margin-left: 70px;
 }
@@ -141,10 +145,10 @@ header ul li a{
     position: fixed;
     background: var(--ColorBlanco);
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     right: 0;
     /*height: calc(70% - 90px);*/
-    top: 80px;
+    top: 120px;
     text-align: center;
     }
     header nav ul li a{
@@ -167,20 +171,35 @@ header ul li a{
     }
     .redes-sociales div{
         display:flex;
-        width: 50%;
-        justify-content: space-between;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;
         padding: 5px;
     }
-    img:nth-child(4){
-        width: 26px;
-        height: auto;
+    .splide{
+        top: 130px;
     }
 }
 /*--- Fin Estilos Header ---*/
 
 /*--- Estilos Cards de Pago ---*/
-
 .card-header-pago{
     background-color: var(--ColorSecundario);
 }
+
+
+/*-- Estilo Formulario de Contacto ----*/
+footer div textarea, input, button{
+    color: var(--ColorBlanco);
+}
+footer div input{
+    width: 100%;
+}
+footer div textarea{
+    width: 100%;
+}
+footer div button{
+    width: 40%;
+}
+
 

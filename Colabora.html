@@ -88,16 +88,51 @@
 
 
 <!-- Seccion del Formulario -->  
-<section class="container-lg container-info justify-content-center p-5 mt-5 mb-5">
-  <div class="container-sm bg-light p-4">
+<section class="container-fluid container-info justify-content-center mt-5 py-5">
+  <div class="container-lg bg-light p-4 container-voluntario">
     <h4 class="text-center text-dark"> Inscripcion para Voluntariado</h4>
-    <div class="row" >
-      <div class="col-10">
-        <form action="">
-          <h1 class="text-center">aca va el formulario</h1>
-        </form>
+    <form class="row g-3 p-5">
+      <div class="col-md-6">
+        <label for="input-nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="input-nombre" placeholder="Juan Herrera">
       </div>
-    </div>
+      <div class="col-md-6">
+        <label for="input-ciudad" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="input-ciudad" placeholder="La Calera">
+      </div>
+      <div class="col-md-6">
+        <label for="input-email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputAddress" placeholder="ejemplo@ejemplo.cl">
+      </div>
+      <div class="col-md-6">
+        <label for="input-edad" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="input-edad" placeholder="30">
+      </div>
+      <div class="col-md-6">
+        <label for="input-telefono" class="form-label">Telefono</label>
+        <input type="tel" class="form-control" id="input-telefono" placeholder="56789011">
+      </div>
+  
+      <div class="col-md-6 d-flex">
+        <p>Experiencia como Voluntario</p>
+        <div class="form-check col-md-6 col-sm-4 mt-5">
+          <input class="form-check-input" type="radio" name="gridRadios" id="inputCheck_1 gridRadios1" value="option1">
+          <label class="form-check-label" for="gridRadios1">
+            Si
+          </label>
+        </div>
+        <div class="form-check col-md-6 col-md-4 mt-5">
+          <input class="form-check-input" type="radio" name="gridRadios" id="inputCheck_2 gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            No
+          </label>
+        </div>
+      </div>
+      </div>  
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
   </div>
 </section>
 

@@ -47,16 +47,18 @@
     </nav>
 
 <nav class="p-5 nav-link-paginas-internas">
+    <img class="icon-home p-1" src="Img/home.png" alt="">
     <a href="Donaciones.html">Volver</a>
 </nav>
 
 
 <!-- Seccion Coronas ------->
-<nav class="text-center">
-    <h1>Coronas de Caridad</h1>
-</nav>
-<section class="container-lg bg-light p-5">
-    <div class="row">
+<section class="container-lg bg-light">
+    <nav class="mt-2">
+        <h1 class="sub-titulos"><strong>DONACIONES</strong></h1>
+        <hr>
+      </nav>
+    <div class="row mt-4">
         <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
           <a href="Coronas_Page.html">
             <img class="img-fluid" src="Img/Coronas_8.jpg" alt=""></a>
@@ -169,8 +171,8 @@
                 <div class="p-3">
                     <h5 class="text-white">Contactanos</h5>
                     <form action="">
-                        <input class="bg-dark p-2 mb-2" type="text" placeholder="Nombre" name="input-nombre">
-                        <input class="bg-dark p-2 mb-2" type="email" placeholder="Email" name="input-email">
+                        <input class="bg-dark p-2 mb-2" type="text" placeholder="Nombre" required name="input-nombre">
+                        <input class="bg-dark p-2 mb-2" type="email" placeholder="Email" required name="input-email">
                         <textarea class="bg-dark p-2 mb-2" name="textarea-mensaje" id="" cols="20" rows="3" placeholder="Mensaje"></textarea>
                         <button class="bg-dark p-2" name="btn_enviar">Enviar</button>
                     </form>

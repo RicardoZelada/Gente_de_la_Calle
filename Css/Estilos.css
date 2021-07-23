@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root{
     --ColorPrimario: #2E90C4;
     --ColorSecundario: #033265;
@@ -9,12 +11,28 @@
 
 body{
     background-color: var(--ColorBody);
+    font-family: 'Lato', sans-serif;
 }
 
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+}
+
+hr{
+    margin: 2px;;
+}
+
+
+.sub-titulos{
+font-size: 1.2em;
+font-style: bold;
+}
+
+nav .icon-home{
+    width: 32px;
+    height: auto;
 }
 
 .splide{
@@ -36,7 +54,8 @@ padding-right: 10%;
 }
 
 .nav-link-paginas-internas{
-    margin-top: 110px;
+    margin-top: 130px;
+    margin-left: 2%;
 }
 .nav-titulos-paginas-principales{
   margin-top: 190px;
@@ -116,7 +135,7 @@ header ul li a{
 .container-rrss{
     background-color: var(--ColorPrimario);
     position: fixed;
-    top: 100px;
+    top: 90px;
     z-index: 200;
 }
 
@@ -132,6 +151,9 @@ header ul li a{
 }
 
 @media (max-width: 840px){
+    .container-rrss{
+        top: 72px;
+    }
     header nav img{
         width: 120px;
         margin-left: 2%;
@@ -161,9 +183,7 @@ header ul li a{
 }
 
 @media (max-width:760px){
-    .container-rrss{
-        top: 72px;
-    }
+    
 }
 
 @media (max-width: 450px){
@@ -214,7 +234,6 @@ footer div button{
     margin-top: 130px;
     overflow: hidden;
   }
-  
   .slider ul{
     display: flex;
     width: 300%;
@@ -222,17 +241,14 @@ footer div button{
     animation: cambio 20s infinite;
     animation-direction:alternate ;
   }
-  
   .slider li{
     width: 100%;
     list-style: none;
   }
-  
   .slider img{
     width: 100%;
     height: auto
   }
-  
   @keyframes cambio {
     0%{ margin-left: 0; }
     20%{ margin-left: 0; }
@@ -251,11 +267,44 @@ footer div button{
 
   @media (max-width:700px){
     .container-info{
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 10px;
+        padding-left: 10px;
     }.container-voluntario{
         width: 100%;
     }
 }
+
+/*--- Noticias ---*/
+
+@media (max-width:991px){
+    .container-news .new-3{
+        display: none;
+}
+}
+
+/*---- Coronas ---*/
+
+.div-coronas{
+    width: 100%;
+    height: auto;
+}
+
+.div-coronas img{
+    width: 100%;
+    height: auto;
+}
+
+/*----- Donaciones ---*/
+
+.div-dona{
+    width: 77%;
+    height: auto;
+}
+
+
+
+
+
+
 
   

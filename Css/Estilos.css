@@ -35,6 +35,27 @@ nav .icon-home{
     height: auto;
 }
 
+.box-1, .box-2, .box-3{
+    border-radius: 3px;
+    border: 1px solid var(--ColorNegro);
+}
+
+.icon-cards-2{
+    width: 55px;
+    height: auto;
+    padding: 0;
+}
+.icon-cards-3{
+    width: 50px;
+    height: auto;  
+}
+
+.icon-cards{
+    width: 33px;
+    height: auto;
+    margin: auto;
+}
+
 .splide{
     top: 180px;
 }
@@ -55,7 +76,7 @@ padding-right: 10%;
 
 .nav-link-paginas-internas{
     margin-top: 130px;
-    margin-left: 2%;
+    /*margin-left: 2%;*/
 }
 .nav-titulos-paginas-principales{
   margin-top: 190px;
@@ -300,6 +321,40 @@ footer div button{
     width: 77%;
     height: auto;
 }
+
+/*--- SeudoCarrito ---*/
+
+.div-seudoCarrito{
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 20%;
+    padding: 10px;
+    z-index: 3;
+    background-color: var(--ColorPrimario);
+    color: var(--ColorBlanco);
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .div-seudoCarrito{
+        width: 35%;
+}
+}
+
+@media (max-width:500px){
+    .div-seudoCarrito{
+        width: 100%;
+    }.nav-link-paginas-internas{
+        margin-top: 180px;
+    }
+}
+
+
+
+
+
+
 
 
 

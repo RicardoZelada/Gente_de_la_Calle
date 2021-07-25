@@ -46,13 +46,17 @@
         </div>
       </nav>
 
+      <!-- Seudo Carrito-->
+      <div class="div-Recordatorio">
+
+      </div>
+
       <nav class="p-5 nav-link-paginas-internas">
           <img class="icon-home p-1" src="Img/home.png" alt="">
         <a class="pl-5" href="Donaciones.html">Volver</a>
       </nav>
 
-   
-
+    
     <!-- Seccion Tipos de Donaciones ------>
     <section class="container-lg bg-light p-2">
         <nav class="mt-2">
@@ -91,14 +95,10 @@
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 col-md-8 col-sm-6">
-                                    <button type="button" class="btn btn-outline-secondary mt-2 p-2">$1000</button>
-                                    <button type="button" class="btn btn-outline-secondary mt-2 p-2">$2000</button>
-                                    <button type="button" class="btn btn-outline-secondary mt-2 p-2">$3000</button>
-                                    <button type="button" class="btn btn-outline-secondary mt-2 p-2">$5000</button>
                                     <div class="row mt-4">
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
                                             <div class="input-group">
-                                                <input type="text" aria-label="Last name" class="form-control" placeholder="Otro Monto">
+                                                <input type="text" aria-label="Last name" class="form-control input-monto" placeholder="Otro Monto">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -107,16 +107,15 @@
                                                 <label class="form-check-label" for="defaultCheck1"> Una vez</label>
                                             </div>
                                             <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                                                 <label class="form-check-label" for="defaultCheck1"> Mensual </label>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-grid gap-2 col-8 mx-auto py-4">
-                                <button class="btn btn-primary" type="button">Agregar</button>
+                                <button class="btn btn-primary" id="btn-agregar" onclick="traspasar();" type="button">Agregar</button>
                               </div>
                         </div>
                     </div>
@@ -127,6 +126,60 @@
                             <h6>Escoja su Corona de Caridad</h6>
                         </div>
                         <div class="card-body">
+                            <div class="div-Validacion">
+                                
+                            </div>
+                            <div class="row p-4">
+                                <div class="form-check mt-2 col-lg-4 col-6">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      TARJETA DE CREDITO
+                                    </label>
+                                </div>
+                                <div class="form-check mt-2 col-lg-4 col-6">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      TARJETA DE DEBIDO
+                                    </label>
+                                </div>
+                                <div class="form-check mt-2 col-lg-4 col-6">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      PAGAR CON PAY PAL
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <form class="row g-3 p-4">
+                                <div class="col-md-8">
+                                  <label for="input-nombre" class="form-label">Numero de Tarjeta</label>
+                                  <input type="text" class="form-control" id="input-numero" required placeholder="1234 - 2345 - 5432 - 2344">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="input-ciudad" class="form-label">CVV</label>
+                                  <input type="text" class="form-control" id="input-cvv" required placeholder="030">
+                                </div>
+                                <div class="col-md-8">
+                                  <label for="input-email" class="form-label">Nombre Titular</label>
+                                  <input type="email" class="form-control" id="input-nombre" required placeholder="Juan Herrera">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="input-ciudad" class="form-label">Monto</label>
+                                    <input type="text" class="form-control" id="input-monto" required placeholder="Monto a Pagar">
+                                  </div>
+                                <div class="col-md-6">
+                                  <label for="input-telefono" class="form-label">Mes de Vencimiento</label>
+                                  <input type="tel" class="form-control" id="input-mes" required placeholder="Diciembre">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="input-telefono" class="form-label">Año de Vencimiento</label>
+                                    <input type="tel" class="form-control" id="input-anio" required placeholder="2024">
+                                  </div>
+                                  <div class="d-grid gap-2 col-8 mx-auto py-4">
+                                    <button class="btn btn-primary" type="button" id="btn-pago">Pagar</button>
+                                </div>
+                                </div>  
+                            </form>
 
                         </div>
                     </div>
@@ -191,7 +244,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="Js/init.js"></script>
+    <script src="Js/donacion.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -217,24 +217,6 @@ btnRespuesta_4.addEventListener('click', ()=>{
 });
 
 
-const btnAux = document.querySelector(".btn-agregar");
-    btnAux.addEventListener('click', ()=>{
-        let div_Carro = document.querySelector(".div-Recordatorio")
-        div_Carro.innerHTML = '';
-
-        let valorMonto = document.querySelector('.input-monto').value;
-        
-        if(valorMonto != ""){
-            let div_Valor = document.createElement('div');
-            div_Valor.classList.add("div-seudoCarrito");
-            div_Valor.innerHTML = "Usted tiene un producto pendiente por pagar de: $ " + $valorMonto;
-
-            div_Carro.appendChild(div_Carro);
-
-        }
-
-    });
-
 
 
 
